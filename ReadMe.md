@@ -1,6 +1,6 @@
 ﻿# SINDy-PI: A Robust Algorithm for Parallel Implicit Sparse Identification of Nonlinear Dynamics
 
-SINDy-PI is a robust algorithm for parallel implicit sparse identification of nonlinear dynamics algorithm. The SINDy-PI algorithm implicit dynamical systems in a robust and parallel optimization.  The details of the approach are in our arXiv paper.  [CARDY ADD LINK HERE]
+SINDy-PI is a robust algorithm for parallel implicit sparse identification of nonlinear dynamics algorithm. The SINDy-PI algorithm implicit dynamical systems in a robust and parallel optimization.  The details of the approach are in our arXiv paper.  []
 
 
 Examples
