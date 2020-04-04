@@ -5,4 +5,4 @@ This folder constains the example of using the SINDy-PI to identify equation of 
 ![](Images/Single_Pendulum_DL.jpg)
 # How to run
 
---Please run the "SinglePendulum_Main.m" file.
+* Please run the "SinglePendulum_Main.m" file.
