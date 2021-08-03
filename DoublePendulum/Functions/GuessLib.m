@@ -20,18 +20,18 @@ Sym_Struct{1,Index}=1;
 
 %% First calculate the polynomial term
 
-% % Form basis vector
-% Basis=[X(:,1) X(:,2) X(:,1)-X(:,2) X(:,1)-2*X(:,2) 2*X(:,1)-X(:,2) 2*X(:,1)-2*X(:,2)];
-% Basis_Sym=[Symbol(1) Symbol(2) Symbol(1)-Symbol(2) Symbol(1)-2*Symbol(2) 2*Symbol(1)-Symbol(2) 2*Symbol(1)-2*Symbol(2)];
-% 
-% % Add dx term
-% Data(:,Index)=dX(:,1);
-% Sym_Struct{1,Index}=Symbol_dX(iter);
-% Index=Index+1;
-% 
-% for i=3:size(Basis,2)
-%    Data(:,Index)=dX(:,1).*cos(Basis(:,i)).^2;
-%    Sym_Struct{1,Index}=Symbol_dX(iter)*cos(Basis_Sym(1,i)).^2;
-%    Index=Index+1;
-% end
+% Form basis vector
+Basis=[X(:,1) X(:,2) X(:,1)-X(:,2) X(:,1)-2*X(:,2) 2*X(:,1)-X(:,2) 2*X(:,1)-2*X(:,2)];
+Basis_Sym=[Symbol(1) Symbol(2) Symbol(1)-Symbol(2) Symbol(1)-2*Symbol(2) 2*Symbol(1)-Symbol(2) 2*Symbol(1)-2*Symbol(2)];
+
+% Add dx term
+Data(:,Index)=dX(:,1);
+Sym_Struct{1,Index}=Symbol_dX(iter);
+Index=Index+1;
+
+for i=3:size(Basis,2)
+   Data(:,Index)=dX(:,1).*cos(Basis(:,i)).^2;
+   Sym_Struct{1,Index}=Symbol_dX(iter)*cos(Basis_Sym(1,i)).^2;
+   Index=Index+1;
+end
 
